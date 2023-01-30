@@ -625,6 +625,16 @@ body {
     cursor: pointer;
     padding: 0%;
 }
+.main-form-text {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
 .backdrop {
     position: fixed;
     left: 0;
