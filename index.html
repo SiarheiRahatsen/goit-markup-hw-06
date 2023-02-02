@@ -552,12 +552,18 @@
               >Zapisz się do newslettera</label
             >
             <input
+              class="main-form-data"
               type="email"
               name="email"
               id="user_email"
               placeholder="E-mail"
             />
-            <button type="submit">Zapisz się</button>
+            <button class="main-form-button" type="submit">Zapisz się</button>
+            <svg class="icon-send">
+              <use
+                href="/goit-markup-hw-06/images/icons.svg#icon-icon-send1"
+              ></use>
+            </svg>
           </form>
         </div>
       </div>
@@ -570,7 +576,7 @@
           <p class="form-input-text">Zostaw swoje dane w formularzu poniżej</p>
           <form class="feedback-data-user">
             <label class="feedback-data-contacts">
-              Imie
+              <div class="feedback-text-contacts">Imie</div>
               <svg class="icon-person">
                 <use
                   href="/goit-markup-hw-06/images/icons.svg#icon-person-black-18dp-11"
@@ -579,7 +585,12 @@
               <input class="feedback-data-form" type="text" name="username" />
             </label>
             <label class="feedback-data-contacts">
-              Telefon
+              <div class="feedback-text-contacts">Telefon</div>
+              <svg class="icon-phone">
+                <use
+                  href="/goit-markup-hw-06/images/icons.svg#icon-phone-black-18dp-1"
+                ></use>
+              </svg>
               <input
                 class="feedback-data-form"
                 type="tel"
@@ -587,21 +598,28 @@
               />
             </label>
             <label class="feedback-data-contacts">
-              Email
+              <div class="feedback-text-contacts">Email</div>
+              <svg class="icon-email">
+                <use
+                  href="/goit-markup-hw-06/images/icons.svg#icon-email-black-18dp-11"
+                ></use>
+              </svg>
               <input class="feedback-data-form" type="email" name="email" />
             </label>
             <label class="feedback-data-contacts">
-              Komentarz
+              <div class="feedback-text-contacts">Komentarz</div>
               <textarea
                 class="feedback-text"
                 name="feedback"
-                rows="5"
                 placeholder="Wprowadź tekst"
               ></textarea>
             </label>
             <label class="feedback-data-checkbox">
-              <input type="checkbox" name="hobby" value="icon-check" />
-              Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+              <input type="checkbox" name="checkbox" value="icon-check" />
+              <div class="feedback-data-regular">
+                Oświadczam iż akceptuję <span>Regulamin</span> i
+                <span>Politykę Prywatności.</span>
+              </div>
             </label>
             <button class="feedback-button" type="submit">Wyślij</button>
           </form>
